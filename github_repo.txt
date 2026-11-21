@@ -5,7 +5,8 @@ https://www.github.com/azhar9983/
 https://github.com/azhar9983/Jenkins_CICD_Azharuddin_Ansari.git
 
 
-
-
+repos used in these pipeline
+FLASK_REPO="https://github.com/azhar9983/flask-backend.git"
+EXPRESS_REPO="https://github.com/azhar9983/express-frontend.git"
 
 
