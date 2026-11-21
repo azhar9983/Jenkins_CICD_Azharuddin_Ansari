@@ -78,7 +78,7 @@ run scripts cmd to configure ec2 instance
 
 and ec2 t3-micro doesn't run well on jenkins +2 apps load so either choose bigger instance or use swap
 for swap cmd is given below run it on ec2 
-
+```bash
 echo "==> Adding 1GB swap (helps t2/t3.micro run Jenkins + 2 apps)"
 if ! swapon --show | grep -q swapfile; then
   sudo fallocate -l 1G /swapfile
@@ -87,3 +87,4 @@ if ! swapon --show | grep -q swapfile; then
   sudo swapon /swapfile
   echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
+```
